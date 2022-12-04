@@ -3,8 +3,14 @@
 # x=34; y=-30 -> 4
 # x=2; y=4-> 1
 # x=-34; y=-30 -> 3
-X = int (input("Введите X:"))
-Y  = int (input("Введите Y:"))
-Z = int (input("Введите Z:"))
-a = (not (X or Y or Z)) == (not (X) and not (Y) and not (Z))
-print (f'{X},{Y},{Z} - ¬({X} ⋁ {Y} ⋁ {Z}) = ¬{X} ⋀ ¬{Y} ⋀ ¬{Z} - {a}')
+x = int (input("Введите X:"))
+y  = int (input("Введите Y:"))
+if ( x > 0 and y > 0 ):
+    print ("I")
+if ( x < 0 and y > 0 ):
+    print ("II")
+if ( x < 0 and y < 0 ):
+    print ("III")
+if ( x > 0 and y < 0 ):
+    print ("IV")   
+
